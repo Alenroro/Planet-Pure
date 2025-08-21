@@ -444,7 +444,7 @@
       </section>
 
       <!-- Contact section -->
-      <section class="contact-section" id="contact"> 
+      <section class="contact-section" id="contact">
         <div class="overlay"></div>
 
         <div class="contact-container">
@@ -464,43 +464,80 @@
               <p><strong>Emergency support:</strong> 24×7 Available</p>
             </div>
           </div>
-
-          <div class="contact-form">
+          <form
+            action="https://formspree.io/f/mjkoqqal"
+            method="POST"
+            class="contact-form"
+          >
             <div class="form-grid">
               <div class="form-group textarea-full">
                 <label>Full Name</label>
-                <input type="text" placeholder="Enter your Name" />
+                <input
+                  required
+                  name="name"
+                  type="text"
+                  placeholder="Enter your Name"
+                  minlength="2"
+                />
               </div>
               <div class="form-group">
                 <label>Email</label>
-                <input type="email" placeholder="Enter your Email" />
+                <input
+                  required
+                  name="email"
+                  type="email"
+                  placeholder="Enter your Email"
+                />
               </div>
 
               <div class="form-group">
                 <label>Company</label>
-                <input type="text" placeholder="Enter your Company" />
+                <input
+                  required
+                  name="company"
+                  type="text"
+                  placeholder="Enter your Company"
+                />
               </div>
               <div class="form-group">
                 <label>Service</label>
-                <input type="text" placeholder="Enter your Service" />
+                <input
+                  required
+                  name="service"
+                  type="text"
+                  placeholder="Enter your Service"
+                />
               </div>
 
               <div class="form-group">
                 <label>Phone</label>
-                <input type="text" placeholder="Enter your Phone" />
+                <input
+                  name="phone"
+                  type="tel"
+                  placeholder="Enter your Phone"
+                  required
+                  pattern="[0-9]{10}"
+                  title="Enter a 10-digit phone number"
+                />
               </div>
               <div class="form-group textarea-full">
                 <label>Message</label>
-                <textarea placeholder="Type your Message..."></textarea>
+                <textarea
+                  name="message"
+                  placeholder="Type your Message..."
+                  required
+                  minlength="5"
+                ></textarea>
               </div>
             </div>
 
             <label class="checkbox">
-              <input type="checkbox" /> I agree to the terms and condition
+              <input required type="checkbox" /> I agree to the terms and
+              condition
             </label>
 
-            <button class="submit-btn">Submit</button>
-          </div>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
         </div>
       </section>
 
@@ -526,8 +563,16 @@
               <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About Us</a></li>
-                <li><a href="./industrial-management.html">Industrial Waste Management</a></li>
-                <li><a href="./marine-service.html">Marine Services for Vessels</a></li>
+                <li>
+                  <a href="./industrial-management.html"
+                    >Industrial Waste Management</a
+                  >
+                </li>
+                <li>
+                  <a href="./marine-service.html"
+                    >Marine Services for Vessels</a
+                  >
+                </li>
                 <li><a href="./contact.html">Contact Us</a></li>
               </ul>
             </div>
