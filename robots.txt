@@ -1,0 +1,25 @@
+# Allow all search engines and AI crawlers to index the site
+User-agent: *
+Allow: /
+
+# Common AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Add your sitemap link for better SEO
+Sitemap: https://planetpureuae.com/sitemap.xml
